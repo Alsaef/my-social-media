@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- cdn icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+          #input-file{
+            display: none;
+          }
+        </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="container shadow mt-1">
+                <ul class="nav  justify-content-around align-items-center">
+                    <li class="nav-item fs-2">
+                        <a class="nav-link active nav-click" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="nav-item fs-2">
+                        <a class="nav-link" href="#" id="nav-click-profile"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li class="nav-item fs-2">
+                        <a class="nav-link nav-click" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="nav-item fs-2">
+                        <a class="nav-link" href="#" onclick="fndClick()"><i class="fa-solid fa-users"></i></a>
+                    </li>
+                    <li class="nav-item fs-2">
+                        <a class="nav-link nav-click" href="#"><i class="fa-solid fa-flag"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
+
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Our Another Service</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                           <div class="d-block">
+                            <a class="nav-link nav-click" href="#"><img style="width: 60px;" class="img-fluid"
+                                src="images/ratul bg.png" alt=""> <button
+                                class="btn btn-lg btn-outline-primary">Join</button>
+                        </a>
+                           </div>
+                           <div>
+                                <a class="nav-link fs-5 text-dark nav-click" href="#"><i class="fa-solid fa-comment-dots"></i> Message Box</a>
+                           </div>
+                           <div>
+                                <a class="nav-link fs-5 text-dark nav-click" href="#"><i class="fa-solid fa-gear"></i>Privacy</a>
+                           </div>
+                           <div>
+                                <a class="nav-link fs-5 text-dark nav-click" href="#"><i class="fa-solid fa-magnifying-glass"></i>Scarch</a>
+                           </div>
+                          </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </header>
+        <main>
+            <section class="container mt-4">
+                <div class="mb-3 d-flex align-items-center">
+                    <div class="px-3">
+                        <img style="width: 60px;" class="" src="images/ratul bg.png" alt="">
+                    </div>
+                    <input type="email" class="form-control p-2" id="exampleFormControlInput1"
+                        placeholder="Whats in your mind today?">
+                    <div class="px-1">
+                        <label for="input-file" class="btn btn-lg text-success" id="btn-post"><i class="fa-solid fa-image fs-3"></i></label><label for=""></label>
+                        <input type="file" accept="img/jpg, img/png , img/jpg" id="input-file">
+                    </div>
+                </div>
+            </section>
+
+            <!-- post -->
+            <section class="container mt-5">
+             <div  class=" row row-cols-1  g-4">
+                <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center ">
+                          <div class="profie-img">
+                            <img width="55px" src="images/ratul bg.png" alt="">
+                          </div>
+                          <div class="text px-2">
+                            <div>
+                              <a href="" class="text-dark link-underline link-underline-opacity-0 ">A S Ratul</a>
+                              <p>15 March <i class="fa-solid fa-earth-americas"></i></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="caption">
+                          <p class="fw-bold">Photo graphi &#128247; <a href=""
+                              class="link-underline link-underline-opacity-0">Nahid Hassan Sagor</a></p>
+                        </div>
+                        <img src="images/post/3.jpg" class="card-img-top" alt="...">
+                        <div>
+                          <div class=" mt-1">
+                            <a href="" class="link-underline link-underline-opacity-0"> <i class="fa-solid fa-heart fs-5"
+                                style="color: #dd0848;"></i>
+                              <span class="px-2 text-dark" id="count-1">600</span></a>
+                          </div>
+                          <hr class="border-1">
+                          <div class=" d-flex justify-content-between mt-2 container">
+                            <div class="btn btn-lg" id="likes1-btn"><i class="fa-regular fa-heart" id="like-1"></i ></span>
+                            </div>
+                            <div class="btn btn-lg"><i class="fa-regular fa-comment fs-5"></i><span class="px-2">Comment</span>
+                            </div>
+                            <div class="btn btn-lg"><i class="fa-regular fa-share-from-square fs-5"></i><span
+                                class="px-2">Share</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center ">
+                          <div class="profie-img">
+                            <img width="55px" src="images/ratul bg.png" alt="">
+                          </div>
+                          <div class="text px-2">
+                            <div>
+                              <a href="" class="text-dark link-underline link-underline-opacity-0 ">A S Ratul</a>
+                              <p>1d <i class="fa-solid fa-earth-americas"></i></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="caption">
+                           <p class="fw-bold"> Love Is Indeed limitless</p>
+                        </div>
+                        <img src="images/post/5.jpg" class="card-img-top" alt="...">
+                        <div>
+                          <div class=" mt-1">
+                            <a href="" class="link-underline link-underline-opacity-0"> <i class="fa-solid fa-heart fs-5"
+                                style="color: #dd0848;"></i>
+                              <span class="px-2 text-dark" id="count-2">600</span></a>
+                          </div>
+                          <hr class="border-1">
+                          <div class=" d-flex justify-content-between mt-2 container">
+                            <div class="btn btn-lg" id="like2-btn"><i class="fa-regular fa-heart" id="like-2"></i ></span>
+                            </div>
+                            <div class="btn btn-lg"><i class="fa-regular fa-comment fs-5"></i><span class="px-2">Comment</span>
+                            </div>
+                            <div class="btn btn-lg"><i class="fa-regular fa-share-from-square fs-5"></i><span
+                                class="px-2">Share</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center ">
+                          <div class="profie-img">
+                            <img width="55px" src="images/my-bg2 (3).png" alt="">
+                          </div>
+                          <div class="text px-2">
+                            <div>
+                              <a href="" class="text-dark link-underline link-underline-opacity-0 ">Abdulla Al Mamun</a>
+                              <p>1d <i class="fa-solid fa-earth-americas"></i></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="caption mt-3">
+                           <p class="fw-bold "><span>Don't need any selfish people.. &#10084;</span></p>
+                        </div>
+                        <img src="images/post/6.jpg" class="card-img-top" alt="...">
+                        <div>
+                          <div class=" mt-1">
+                            <a href="" class="link-underline link-underline-opacity-0"> <i class="fa-solid fa-heart fs-5"
+                                style="color: #dd0848;"></i>
+                              <span class="px-2 text-dark" id="count-3">700</span></a>
+                          </div>
+                          <hr class="border-1">
+                          <div class=" d-flex justify-content-between mt-2 container">
+                            <div class="btn btn-lg" id="like3-btn"><i class="fa-regular fa-heart" id="like-3"></i ></span>
+                            </div>
+                            <div class="btn btn-lg"><i class="fa-regular fa-comment fs-5"></i><span class="px-2">Comment</span>
+                            </div>
+                            <div class="btn btn-lg"><i class="fa-regular fa-share-from-square fs-5"></i><span
+                                class="px-2">Share</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+            </section>
+        </main>
+        <script src="common.js"></script>
+        <script src="like.js"></script>
+        <script src="post.js"></script>
+        <script src="friend.js"></script>
+        <script src="nav-control.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

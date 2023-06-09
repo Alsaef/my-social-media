@@ -1,0 +1,10 @@
+body{
+    background:#eee;
+}
+.bg-primary-admin{
+    background: linear-gradient(20deg, rgba(2,0,36,1) 0%, rgba(25,25,107,1) 15%, rgba(0,212,255,1) 70%);
+
+}
+.bg-success-admin{
+    background: linear-gradient(to bottom, skyblue,skyblue 100%)
+}
