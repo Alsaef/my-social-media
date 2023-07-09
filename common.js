@@ -1,5 +1,6 @@
 function Likes(btnId,color,LikesCounts) {
     document.getElementById(btnId).addEventListener("click",function () {
+       
        const Likes= document.getElementById(color);
        Likes.style.color="red"
      const likesCount=document.getElementById(LikesCounts);

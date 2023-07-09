@@ -61,7 +61,12 @@
                                 <a class="nav-link fs-5 text-dark nav-click" href="#"><i class="fa-solid fa-gear"></i>Privacy</a>
                            </div>
                            <div>
-                                <a class="nav-link fs-5 text-dark nav-click" href="#"><i class="fa-solid fa-magnifying-glass"></i>Scarch</a>
+                                <button onclick="btnSystem()" class="nav-link fs-5 text-dark" href="#"><i class="fa-solid fa-magnifying-glass"></i>Scarch</button>
+
+                                <div class="mb-3 d-flex d-none" id="show">
+                                  <input type="text" class="form-control" id="searchId" placeholder="">
+                                  <button id="clickbtn" class="btn btn-primary ms-2">Scearch</button>
+                                </div>
                            </div>
                           </div>
                         </div>
@@ -116,7 +121,7 @@
                           </div>
                           <hr class="border-1">
                           <div class=" d-flex justify-content-between mt-2 container">
-                            <div class="btn btn-lg" id="likes1-btn"><i class="fa-regular fa-heart" id="like-1"></i ></span>
+                            <div class="btn btn-lg" id="likes1-btn" ><i class="fa-regular fa-heart" id="like-1"></i ></span>
                             </div>
                             <div class="btn btn-lg"><i class="fa-regular fa-comment fs-5"></i><span class="px-2">Comment</span>
                             </div>
@@ -209,6 +214,7 @@
         <script src="post.js"></script>
         <script src="friend.js"></script>
         <script src="nav-control.js"></script>
+        <script src="search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
